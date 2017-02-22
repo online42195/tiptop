@@ -1,26 +1,3 @@
-//START EMAIL FORM
-$(document).ready(function() {
-
-	//E-mail Ajax Send
-	$("form").submit(function() { //Change selektor form
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change put k php
-			data: th.serialize()
-		}).done(function() {
-			alert("Спасибо! Ваша заявка принята.");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
-
-});
-//END EMAIL FORM
-
 function show_feedback_result( message, color ){
 	$( ".bwrapper" ).toggle();
 	$( ".feedback_result" ).show();
@@ -69,3 +46,26 @@ $(document).ready(function(){
 	);
 		
 });
+
+//START EMAIL FORM
+$(document).ready(function() {
+
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change selektor form
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change put k php
+			data: th.serialize()
+		}).done(function() {
+			alert("Спасибо! Ваша заявка принята.");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
+//END EMAIL FORM
