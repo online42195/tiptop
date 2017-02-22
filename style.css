@@ -88,4 +88,4 @@ textarea {outline:none;}
 
 .bwrapper { position:fixed; display:none; width:100%; height:100%; background:#000; opacity:0.6; z-index:1000; }
 .feedback_result { display:none; width:450px; height:30px; position:fixed; top:50%; left:50%; margin-left:-235px; margin-top:-25px; font-size:20px; background:#fff; z-index:1111; padding:20px; text-align:center; }
-.closer { position:absolute; top:0; right:0; background:#E04343; color:#fff; padding:2px 5px; cursor:pointer; }
+.closer { position:absolute; top:0; right:0; background:#E04343; color:#fff; padding:2px 5px; cursor:pointer; } 
